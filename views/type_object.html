@@ -1,0 +1,2 @@
+<label ng-hide="input.parentType === 'array'" for="{{input.scope}}_object_name">Key :</label>
+<input ng-hide="input.parentType === 'array'" ng-blur="checkKey(input.scope)" ng-focus="saveOldKey(input.scope)" ng-key-model=":{{input.scope}}:" ng-change="deleteOldKey(input.scope)" type="text" name="{{input.scope}}_object_name" placeholder="your object name">

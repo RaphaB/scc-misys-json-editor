@@ -1,0 +1,8 @@
+<h1>My JSON File is : {{jsonName}}</h1>
+<div id="form-container">
+  <ng-include class="input-container" ng-repeat="input in inputs.content track by $index" src="'views/inputs.html'"></ng-include>
+</div>
+<select ng-model="fieldType.value" ng-options="opt.value as opt.name for opt in inputOptions">
+</select>
+<button id="submit-type" class="btn btn-info" ng-click="addField(inputs, false)">Add field</button>
+<button id="submit-form" class="btn btn-success" ng-click="submitForm()">Submit new Object</button>

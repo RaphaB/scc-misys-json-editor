@@ -1,0 +1,4 @@
+<label ng-hide="input.parentType === 'array'" for="{{input.scope}}_text_key">Key :</label>
+<input ng-hide="input.parentType === 'array'" ng-blur="checkKey(input.scope)" ng-focus="saveOldKey(input.scope)" ng-key-model=":{{input.scope}}:" ng-change="deleteOldKey(input.scope)" type="text" name="{{input.scope}}_text_key" placeholder="your key">
+<label for="{{input.scope}}_text_value">Value :</label>
+<textarea ng-value-model=":{{input.scope}}:" type="text" name="{{input.scope}}_text_value" placeholder="your value" rows="3"></textarea>
