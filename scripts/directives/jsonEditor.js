@@ -1,6 +1,6 @@
 'use strict';
 
-var myModule = angular.module('testAngularApp');
+var myModule = angular.module('jsonEditor');
 
 myModule.directive('ngKeyModel', function ($compile) {
     return {

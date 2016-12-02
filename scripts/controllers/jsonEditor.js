@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc function
- * @name testAngularApp.controller:MainCtrl
+ * @name jsonEditor.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the testAngularApp
+ * Controller of the jsonEditor
  */
-var myModule = angular.module('testAngularApp');
+var myModule = angular.module('jsonEditor');
 
-myModule.controller('testForm', function ($scope) {
+myModule.controller('jsonForm', function ($scope) {
     $scope.inputs = {url: '', type: 'main', scope: [], content: []};
 
     $scope.keys = [];

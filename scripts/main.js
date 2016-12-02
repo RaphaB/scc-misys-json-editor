@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc overview
- * @name testAngularApp
+ * @name jsonEditor
  * @description
- * # testAngularApp
+ * # jsonEditor
  *
  * Main module of the application.
  */
 
 angular
-  .module('testAngularApp', []);
+  .module('jsonEditor', []);
