@@ -1,0 +1,42 @@
+body
+{
+    display: inline-block;
+    background: url("sea.jpg") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.div_link_json_editor
+{
+    text-align: center;
+    min-height: 20vh;
+}
+
+.link
+{
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    width: 98%;
+    color: white;
+}
+
+.link:hover
+{
+    color:red;
+}
+
+.header
+{
+    align-content: center;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    margin-bottom: 0px;
+}
+
+.explanation
+{
+    text-align: justify;
+    color: white;
+    font-size: 1.2em;
+}
