@@ -14,6 +14,19 @@ bower install scc-misys-json-editor
 
 ### Include in code
 
+  - Include the necessary scripts (be sure to also include the dependancies' scripts, see **[Dependancies](#dependancies)**) :
+
+```html
+<!-- Default optionnal styling -->
+<link rel="stylesheet" href="/bower_components/scc-misys-json-editor/styles/main.css">
+
+<!-- Scripts -->
+<script src="/bower_components/scc-misys-json-editor/scripts/main.js"></script>
+<script src="/bower_components/scc-misys-json-editor/scripts/helpers/jsonEditor.js"></script>
+<script src="/bower_components/scc-misys-json-editor/scripts/directives/jsonEditor.js"></script>
+<script src="/bower_components/scc-misys-json-editor/scripts/controllers/jsonEditor.js"></script>
+```
+
   - Add the call to ng-app **jsonEditor**, to ng-controller **jsonForm**. This should give :
 
 ```html
@@ -53,7 +66,7 @@ bower install scc-misys-json-editor
 
   Rendered template have no base style, customize it as you want :) . Classes and Ids available in code.
 
-Dependancies
+<a name="dependancies"></a>Dependancies
 ------------
 
 In order to run correctly, **scc-misys-json-editor** need certain packages (they are automatically installed using **[Bower](https://bower.io/)**):
