@@ -14,7 +14,7 @@ bower install scc-misys-json-editor
 
 ### Include in code
 
-  1. Add the call to ng-app **jsonEditor**, to ng-controller **jsonForm**. This should give :
+  - Add the call to ng-app **jsonEditor**, to ng-controller **jsonForm**. This should give :
 
 ```html
 <div ng-app="jsonEditor">
@@ -24,7 +24,7 @@ bower install scc-misys-json-editor
 </div>
 ```
 
-  2. Include the view __main.html__. You can either include it in same container than controller, or any child within :
+  - Include the view __main.html__. You can either include it in same container than controller, or any child within :
 
 ```html
 <!-- If you used bower to install, it should give this -->
@@ -32,7 +32,7 @@ bower install scc-misys-json-editor
 </div>
 ```
 
-  3. To pass your JSON file name you can either, call the function initJsonEditor :
+  - To pass your JSON file name you can either, call the function initJsonEditor :
   
 ```html
 <!-- For example : ng-init call in ng-include div -->
@@ -52,7 +52,7 @@ bower install scc-misys-json-editor
 Dependancies
 ------------
 
-In order to run correctly, **scc-misys-json-editor** need certain packages :
+In order to run correctly, **scc-misys-json-editor** need certain packages (they are automatically installed using **bower**):
 
   - [jQuery](https://github.com/jquery/jquery)
   - [FileSaver](https://github.com/eligrey/FileSaver.js/)
