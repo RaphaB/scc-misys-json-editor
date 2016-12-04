@@ -32,7 +32,7 @@ bower install scc-misys-json-editor
 </div>
 ```
 
-  - To pass your JSON file name you can either, call the function initJsonEditor :
+  - To pass your JSON file name you can either, call the function **initJsonEditor** :
   
 ```html
 <!-- For example : ng-init call in ng-include div -->
@@ -49,11 +49,15 @@ bower install scc-misys-json-editor
 </div>
 ```
 
+### Customize it
+
+  - Rendered template have no base style, customize it as you want :) . Classes and Ids available in code.
+
 Dependancies
 ------------
 
-In order to run correctly, **scc-misys-json-editor** need certain packages (they are automatically installed using **bower**):
+In order to run correctly, **scc-misys-json-editor** need certain packages (they are automatically installed using **[Bower](https://bower.io/)**):
 
-  - [jQuery](https://github.com/jquery/jquery)
-  - [FileSaver](https://github.com/eligrey/FileSaver.js/)
-  - [Blob](https://github.com/eligrey/Blob.js/)
+  - **[jQuery](https://github.com/jquery/jquery)**
+  - **[FileSaver](https://github.com/eligrey/FileSaver.js/)**
+  - **[Blob](https://github.com/eligrey/Blob.js/)**
