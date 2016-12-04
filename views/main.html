@@ -1,6 +1,5 @@
-<h1>My JSON File is : {{jsonName}}</h1>
 <div id="form-container">
-  <ng-include class="input-container" ng-repeat="input in inputs.content track by $index" src="'views/inputs.html'"></ng-include>
+  <ng-include class="input-container" ng-repeat="input in inputs.content track by $index" src="'/bower_components/scc-misys-json-editor/views/inputs.html'"></ng-include>
 </div>
 <select ng-model="fieldType.value" ng-options="opt.value as opt.name for opt in inputOptions">
 </select>
