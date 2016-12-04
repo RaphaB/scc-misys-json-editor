@@ -51,7 +51,7 @@ bower install scc-misys-json-editor
 
 ### Customize it
 
-  - Rendered template have no base style, customize it as you want :) . Classes and Ids available in code.
+  Rendered template have no base style, customize it as you want :) . Classes and Ids available in code.
 
 Dependancies
 ------------
