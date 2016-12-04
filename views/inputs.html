@@ -1,7 +1,7 @@
 <div ng-class="{'nested-container': input.content || input.parentType === 'main'}" class="input-container">
   <div ng-include class="form-element" src="input.url"></div>
   <div ng-if="input.content">
-    <ng-include src="'views/inputs.html'" ng-repeat="input in input.content track by $index"></ng-include>
+    <ng-include src="'/bower_components/scc-json-editor/views/inputs.html'" ng-repeat="input in input.content track by $index"></ng-include>
 
     <select ng-model="fieldType.value" ng-options="opt.value as opt.name for opt in inputOptions">
     </select>

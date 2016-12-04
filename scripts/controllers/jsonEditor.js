@@ -18,13 +18,13 @@ myModule.controller('jsonForm', function ($scope) {
     $scope.obj = {};
 
     $scope.inputOptions = [
-        {id: 'type_number', value: 'views/type_number.html', name: 'Number'},
-        {id: 'type_null', value: 'views/type_null.html', name: 'Null'},
-        {id: 'type_text', value: 'views/type_text.html', name: 'Long Text'},
-        {id: 'type_string', value: 'views/type_string.html', name: 'String'},
-        {id: 'type_boolean', value: 'views/type_boolean.html', name: 'Boolean'},
-        {id: 'type_array', value: 'views/type_array.html', name: 'Array'},
-        {id: 'type_object', value: 'views/type_object.html', name: 'Object'}
+        {id: 'type_number', value: '/bower_components/scc-json-editor/views/type_number.html', name: 'Number'},
+        {id: 'type_null', value: '/bower_components/scc-json-editor/views/type_null.html', name: 'Null'},
+        {id: 'type_text', value: '/bower_components/scc-json-editor/views/type_text.html', name: 'Long Text'},
+        {id: 'type_string', value: '/bower_components/scc-json-editor/views/type_string.html', name: 'String'},
+        {id: 'type_boolean', value: '/bower_components/scc-json-editor/views/type_boolean.html', name: 'Boolean'},
+        {id: 'type_array', value: '/bower_components/scc-json-editor/views/type_array.html', name: 'Array'},
+        {id: 'type_object', value: '/bower_components/scc-json-editor/views/type_object.html', name: 'Object'}
     ];
 
     $scope.fieldType = {value: $scope.inputOptions[0].value};
