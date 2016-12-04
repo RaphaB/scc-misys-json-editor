@@ -20,3 +20,21 @@ function createNgValueModelFromCustom($scope, attr) {
     }
     return 'obj[' + keys.join('][') + ']';
 }
+
+function concatAndWriteToFile (data, obj, jsonName) {
+    var concat;
+
+    if (data != "") {
+	if (data instanceof Array) {
+	    data.push(obj);
+	    concat = JSON.stringify(data);
+	} else {
+	    concat = "[" + JSON.stringify(data) + "," + JSON.stringify(obj) + "]";
+	}
+    }
+    else {
+    	concat = "[" + JSON.stringify(obj) + "]";
+    }
+    var blob = new Blob([concat], {type: "text/plain;charset=utf-8"});
+    saveAs(blob, jsonName);
+}

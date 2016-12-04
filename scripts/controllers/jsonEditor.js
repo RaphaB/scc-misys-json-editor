@@ -109,7 +109,7 @@ myModule.controller('jsonForm', function ($scope) {
 	    previous[parent.content.length] = parent.content.length;
 	} else {
 	    var keyModel = createNgKeyModelFromCustom($scope, ':[' + newScope + ']:');
-	    var keyCmd = '$scope.' + keyModel + ' = \'' + keyModel + '\'';
+	    var keyCmd = '$scope.' + keyModel + ' = \'' + keyModel.replace(/[\[\]]/g, '') + '\'';
 	    eval(keyCmd);
 	}
 
@@ -146,7 +146,25 @@ myModule.controller('jsonForm', function ($scope) {
     };
 
     $scope.submitForm = function () {
-	console.log($scope.obj);
-	// fonction(obj, $scope.jsonName)
+    	if ($scope.jsonName != null)
+    	{
+    	    $.ajax({
+    		method: "GET",
+    		url: $scope.jsonName,
+    		datatype :"JSON",
+    		success: function (data) {
+		    concatAndWriteToFile(data, $scope.obj, $scope.jsonName);
+    		},
+		error: function (data) {
+		    concatAndWriteToFile([], $scope.obj, "new_json.json");
+    		}
+	    });
+    	}
+    	else
+    	{
+    	    var concat = "[" + JSON.stringify($scope.obj) + "]";
+    	    var blob = new Blob([concat], {type: "text/plain;charset=utf-8"});
+    	    saveAs(blob, "new_json.json");
+    	}
     };
 });
