@@ -74,3 +74,4 @@ In order to run correctly, **scc-misys-json-editor** need certain packages (they
   - **[jQuery](https://github.com/jquery/jquery)**
   - **[FileSaver](https://github.com/eligrey/FileSaver.js/)**
   - **[Blob](https://github.com/eligrey/Blob.js/)**
+  - and of course **[Angular](https://github.com/angular/bower-angular/)**
